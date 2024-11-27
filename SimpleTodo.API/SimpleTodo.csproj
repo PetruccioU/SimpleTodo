@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.11"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="SimpleTodo.Application\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="SimpleTodo.Application\appsettings.json" />
+      <_ContentIncludedByDefault Remove="SimpleTodo.Application\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="SimpleTodo.Application\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="SimpleTodo.Application\obj\SimpleTodo.Application.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="SimpleTodo.Application\Properties\launchSettings.json" />
+    </ItemGroup>
+
+</Project>
